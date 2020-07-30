@@ -1,0 +1,145 @@
+<header class="banner-area">
+    <div class="container p30">
+        <div class="row">
+            <div class="col-12">
+
+
+                <nav class="navbar navbar-expand-lg">
+                    <a routerLinkActive="menu-active" [routerLink]="['gnomes-list']" class="navbar-brand">
+                        <img src="./assets/img/logo.svg" class="d-inline-block align-middle img-fluid" width="100%"
+                            height="auto" alt="gnomes">
+                    </a>
+                    <button class="navbar-toggler menuNav" type="button" data-toggle="collapse" data-target="#navbar"
+                        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <!--<span class="navbar-toggler-icon"></span>-->
+                        <input type="checkbox" id="nav-toggle" />
+                        <label for="nav-toggle" class="hamburger-icon my-auto">
+                            <span class="navbar-toggler-icon"></span>
+                        </label>
+                    </button>
+
+
+
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav ml-auto">
+
+                            <li class="nav-item d-none d-xl-block">
+                                Filter by:
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" [routerLink]="['gnomes-list']">All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" id="mega-two" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Age
+                                </a>
+                                <div class="dropdown-menu mega-area" aria-labelledby="mega-two">
+                                    <div class="row">
+                                        <div class="offset-1 col-3">
+                                            <h5>Age</h5>
+                                            <p>Remember that Gnomes use to be really much resistant than common humans.
+                                            </p>
+                                        </div>
+                                        <div class="col-7 col-lg-4 w-lg-100">
+                                            <label>Enter an age from 1 to 250</label>
+                                            <div class="input-group input-group-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text"
+                                                        id="inputGroup-sizing-lg">Years</span>
+                                                </div>
+                                                <input type="number" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-lg" step="25" min="1" max="250">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" id="mega-two" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Weight
+                                </a>
+                                <div class="dropdown-menu mega-area" aria-labelledby="mega-two">
+                                    <div class="row">
+                                        <div class="offset-1 col-3">
+                                            <h5>Weight</h5>
+                                            <p>Remember that you are in a Gnome Town and they don't use to be too much
+                                                big.</p>
+                                        </div>
+                                        <div class="col-7 col-lg-4 w-lg-100">
+                                            <label>Enter a weight from 10 to 125</label>
+                                            <div class="input-group input-group-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-lg">Kg</span>
+                                                </div>
+                                                <input type="number" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-lg" step="5" min="10" max="125">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle" id="mega-two" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Height
+                                </a>
+                                <div class="dropdown-menu mega-area" aria-labelledby="mega-two">
+                                    <div class="row">
+                                        <div class="offset-1 col-3">
+                                            <h5>Height</h5>
+                                            <p>Remember that you are in a Gnome Town and it must be taken into
+                                                consideration.</p>
+                                        </div>
+                                        <div class="col-7 col-lg-4 w-lg-100">
+                                            <label>Enter a weight from 10 to 125</label>
+                                            <div class="input-group input-group-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-lg">cm</span>
+                                                </div>
+                                                <input type="number" class="form-control"
+                                                    aria-label="Sizing example input"
+                                                    aria-describedby="inputGroup-sizing-lg" step="5" min="10" max="125">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- <li class="nav-item dropdown menu-area">
+                                <a class="nav-link dropdown-toggle" id="mega-two" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Hair color
+                                </a>
+                                <div class="dropdown-menu mega-area" aria-labelledby="mega-two">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li> -->
+                            <li class="nav-item dropdown menu-area">
+                                <a class="nav-link dropdown-toggle" id="mega-two" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Profession
+                                </a>
+                                <div class="dropdown-menu mega-area" aria-labelledby="mega-two">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <form class="form-inline searchGrid">
+                                <input type="search" placeholder="write a gnome name" aria-label="Search">
+                                <button class="btn" type="submit">Search</button>
+                            </form>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

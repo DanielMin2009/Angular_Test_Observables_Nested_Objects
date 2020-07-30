@@ -1,0 +1,40 @@
+@import "../../../styles.scss";
+
+.card {
+    @include commonText;
+    border-radius: $border-radius;
+    background-color: $white;
+    border: 1px solid rgba($dark, 18%);
+    background-color: lighten($color: rgba($white, 80%), $amount: 3%);
+    padding: 1rem;
+    @media (max-width: 992px) {
+        width: 100%;
+    }
+    @media (min-width: 992px) {
+        width: 90%;
+    }
+
+    .list-group-item {
+        background-color: transparent;
+    }
+    .mLateral {
+        padding: 0 1rem;
+        .myList-2-cols {
+            &:first-child {
+                padding: 0 0 0 1rem;
+            }
+            &:nth-child(2) {
+                padding: 0 1rem 0 0;
+            }
+        }
+    }
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.card-title {
+    font-size: 1.66rem;
+    color: $carmine;
+}

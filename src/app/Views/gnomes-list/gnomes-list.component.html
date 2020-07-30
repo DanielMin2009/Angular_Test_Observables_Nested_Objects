@@ -1,0 +1,10 @@
+<h1 class="mTop text-justify">Brastlewark APP</h1>
+<hr class="mt5 pb25">
+<main class="container animated fadeIn fast no-gutters">
+    <div class="card-columns">
+        <app-gnome-card *ngFor="let gnome of gnomes.Brastlewark" [gnome]="gnome" (selectedGnome)="viewGnome($event)">
+        </app-gnome-card>
+        <!-- this selectedGnome is the Output that comes from this Component and calls the Method viewGnome. It pass the click event from app-gnome-card -->
+    </div>
+</main>
+
