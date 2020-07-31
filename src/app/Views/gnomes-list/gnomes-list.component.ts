@@ -31,9 +31,10 @@ export class GnomesListComponent implements OnInit {
   }
 
   viewGnome(idx: number) {
-    // console.log(idx);
-    this.router.navigate(['/gnome', idx]);
-    // console.log(this.gnomes.Brastlewark[idx]);
+    console.log('passing data');
+    this.gnome = this.gnomes.Brastlewark[idx];
+    console.log(this.gnome);
+    this.router.navigate(['/gnome', idx, this.gnome]);
     // console.log(this.gnomes);
     // with Output recived from GnomeCard.component, we get the selectedGnome ID and we pass it to the Router to navigate throught ID
   }
